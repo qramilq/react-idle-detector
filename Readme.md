@@ -1,5 +1,7 @@
 # react-idle-detector
 
+[![npm version](https://badge.fury.io/js/react-idle-detector.svg)](https://www.npmjs.com/package/react-idle-detector)
+
 Small sized react component for detect idle (no activity) time on your components.
 <br>
 This component calls callback function each time, when user has no activity on your component/components collection.
