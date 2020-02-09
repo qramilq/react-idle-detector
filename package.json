@@ -1,0 +1,40 @@
+{
+  "name": "react-idle-detector",
+  "version": "0.1.0",
+  "description": "Idle detector component for React.js",
+  "main": "lib",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "prepare": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qramilq/react-idle-detector.git"
+  },
+  "keywords": [
+    "react",
+    "idle",
+    "activity"
+  ],
+  "author": "Ramil Ayupov <qramilq@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qramilq/react-idle-detector/issues"
+  },
+  "homepage": "https://github.com/qramilq/react-idle-detector#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.7.5"
+  }
+}
