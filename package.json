@@ -1,6 +1,6 @@
 {
   "name": "react-idle-detector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Idle detector component for React.js",
   "main": "lib",
   "files": [
