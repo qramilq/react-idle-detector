@@ -33,8 +33,8 @@ const noActivityHandler = () => {
 
 <IdleDetector
   events={['mousemove']} // Array of listen events
-  onNoActivity={() => noActivityHandler} // callback on no activity
-  idleTime={60000} // no activity time
+  onNoActivity={noActivityHandler} // callback on no activity
+  idleTime={60000} // no activity time, ms
 >
   {/* watching component/components */}
   <Layout />
@@ -45,6 +45,6 @@ const noActivityHandler = () => {
 
 | Name         | Type     | Default        | Description                    |
 | ------------ | -------- | -------------- | ------------------------------ |
-| events       | array    | []             | Array of user's events         |
+| events       | array    | ['mousemove']  | Array of user's events         |
 | onNoActivity | function | ()=> undefined | Callback, calls on no activity |
 | idleTime     | number   | 60000          | Idle time in milliseconds      |
