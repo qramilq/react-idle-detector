@@ -1,6 +1,6 @@
 export type HTMLElementEvent = keyof HTMLElementEventMap;
 
-export type PropTypes = {
+export type PropsTypes = {
   children: React.ReactNode;
   onNoActivity: () => void;
   idleTime: number;

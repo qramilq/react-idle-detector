@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 import { addEventListeners, removeEventListeners } from './utils';
 
-import { PropTypes } from './types';
+import { PropsTypes } from './types';
 
-const IdleDetector = (props: PropTypes) => {
+const IdleDetector = (props: PropsTypes) => {
   const { onNoActivity, idleTime, events, ...restProps } = props;
   const elemRef = useRef(null);
 
@@ -33,7 +34,13 @@ const IdleDetector = (props: PropTypes) => {
 IdleDetector.defaultProps = {
   events: ['mousemove'],
   onNoActivity: () => undefined,
-  timerId: 60000,
+  idleTime: 60000,
+};
+
+IdleDetector.propTypes = {
+  events: PropTypes.array.isRequired,
+  onNoActivity: PropTypes.func.isRequired,
+  timerId: PropTypes.number,
 };
 
 export default IdleDetector;
