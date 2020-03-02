@@ -8,6 +8,10 @@ This component calls callback function each time, when user has no activity on y
 <br>
 It can be useful to show some notifications, or call some other methods to draw user's attention
 
+## Demo
+
+[![Edit jovial-meitner-9xbou](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/jovial-meitner-9xbou?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Installing
 
 using npm
